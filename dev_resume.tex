@@ -1,0 +1,234 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2010 Max Alcala <maxarturo-at-gmail.com> http://www.maxarturoas.com
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.65in}
+\setlength{\textwidth}{7.0in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\textheight=9.0in
+\usepackage{shading}
+\usepackage{hyperref}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\addline}{\line(1,0){500}}
+\newcommand{\ressubheading}[4]{
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}
+	{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{
+		\Large
+		Max Arturo Alcal\'{a} S\'{a}inz}	& 	(+1)773-640-3531 \\
+		254 Swett Rd &  	 https://github.com/maxArturo \\
+      Woodside, CA 94062 USA				&	  	maxarturo@gmail.com (Twitter: \href{https://twitter.com/MaxArturoAS}{@maxArturoAS})  \\
+                              &     https://maxalcala.com \\
+	\vspace{2pt}
+\end{tabular*}
+
+% \addline
+% 
+% \begin{center}
+% \resheading{Summary}
+% 
+%   I'm a Software Engineer/Tech Lead with significant buisness and customer-facing experience in both Fortune 50 companies and startups. My current interests cover full-stack development, distributed systems, and the art of fostering a healthy company culture.
+% 
+% \end{center}
+% 
+\addline
+\vspace{2pt}
+
+%-----------------------------------------------------------
+%Skills
+\resheading{Skills}
+
+\begin{description}
+	\item[Programming Languages, frameworks and storage:]
+    TypeScript/ES7/ESNext, Node.js, Kotlin, Ruby/Rails, RDBMS/NoSQL persisted storage. Golang, GraphQL, message queues, Bash scripting, \LaTeX, and Reactive Extensions (particularly Rx.js). Some functional programming experience (Haskell, Elm, functional TS libraries).
+
+	\item [Devops/CI:]
+    Jenkins/Teamcity, deployments via Docker and containerization, Kubernetes, Vagrant, AWS, GCP, instrumentation and measurement, basic Bash scripting and basic Linux server management. Previous Terraform/Chef exposure. Automated testing/e2e via Cypress/Puppeteer.
+
+  \item [Frontend:]
+    HTML5, CSS preprocessors, Javascript/precompilers (Babel/TypeScript), Client-side data visualization and processing (d3, crossfilter, SVGs), React.js, Redux, Angular 6/7/8.
+
+	\item[Management/Tech Lead/Business Environment:]
+    Work at any level of abstraction within management (process requirements, deliverables, proof-of-concept). Excellent analytical, communication and problem-solving skills. Previous experience working directly with Fortune 50 VPs as well as directly with end-users. Experienced leading offshore, as well as onshore teams.
+
+	\item[Natural Languages:]
+		Native Spanish, Intermediate Japanese.
+
+	\item[Certifications:]
+		AWS Certified Solutions Architect - Associate
+
+\end{description}
+\addline
+
+%-----------------------------------------------------------
+%Experience
+\resheading{Experience}
+\begin{itemize}
+
+\item
+  \ressubheading{\href{https://clearcover.com}{Clearcover.com}}{Chicago, IL}{Lead Software Engineer}{2019 - Present}
+	\begin{itemize}
+    	\resitem{Lead team responsible for successfully delivering the company's core Policy Management API}
+    	\resitem{Build templating system for generating insurance forms via AWS/Puppeteer/Node apis}
+		\resitem{Pair, upskill, and unblock team members to maximize their productivity and promote a healthy dev team culture}
+		\resitem{Stack: Functional Typescript(v3.x), Rails, Kotlin, AWS/K8s, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{Chicago, IL}{New Ventures Practice, Manager – Tech Lead}{2017 - 2019}
+	\begin{itemize}
+    \resitem{Provide technical leadership for multiple greenfield SaaS offerings across all aspects of the SDLC}
+		\resitem{Responsible for all aspects of technical execution for product vision: Architecture, hands-on development, infrastructure, code quality/best practices, hiring, runbooks, etc.}
+		\resitem{Lead offshore developers with a supportive environment, mentoring and industry-standard patterns}
+		\resitem{Promote successful development team behaviors (developer-led estimations, people over process) in the firm}
+		\resitem{Stack: ES6/Typescript, Angular 5, Node.js, GCP Suite, Docker, Kubernetes, Firebase, Jenkins, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{ReviewTrackers}{Chicago, IL}{Senior Software Developer}{2017}
+	\begin{itemize}
+    \resitem{Deliver features across the entire stack to unlock company growth}
+    \resitem{Support team efficiency by automating tasks and workflows}
+    \resitem{Pair-program and mentor junior developers}
+    \resitem{Measure performance and find optimization solutions}
+        \resitem{Stack: React, Golang. Ruby, Solr, Heroku/AWS, React, Node.js, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{Shoppertrak}{Chicago, IL}{Senior Software Developer/Team Lead}{2015 - 2016}
+	\begin{itemize}
+    \resitem{Own and maintain the Node API for the company's main reporting app }
+    \resitem{Manage the tasks for my team and prioritize with PMs and Tech Architect}
+    \resitem{Promote best practices in my team, pair-program and mentor teammates}
+    \resitem{Configure CI tools, provision, deploy and document server infrastructure requirements}
+     \resitem{Stack: Angular, Node.js, AWS, Redshift/PG, TeamCity}
+	\end{itemize}
+
+% \newpage
+
+\item
+	\ressubheading{Tukaiz, LLC}{Chicago, IL}{Software Developer}{May - Oct 2015}
+	\begin{itemize}
+		\resitem{Support Rails 2.3.8, 3, \& 4 applications }
+		\resitem{Refactored large legacy VB codebase into Ruby}
+		\resitem{Re-implemented file management scheduler with Rails/Sidekiq}
+	\end{itemize}
+
+\item 
+	\ressubheading{Gearbox Software}{Dallas, TX}{Software Developer - Contractor}{May - Dec 2015}
+	\begin{itemize}
+		\resitem{Implement Battleborn Game launch and Beta registration sites with Ruby/Rails}
+		\resitem{Collaborate on UX flows and internal API flow}
+	\end{itemize}
+
+
+
+\item
+	\ressubheading{PepsiCo - Frito-Lay North America}{Plano, TX}{Supply Chain/Transportation Developer}{Jan 2013 - May 2015}
+	\begin{itemize}
+		\resitem{Generated and reported key national Supply Chain metrics (Fill
+		Rate, DOH, Demand Accuracy), for Frito-Lay US and Canada on an ongoing basis}
+		\resitem{Maintained ETL and data collection scripts for all
+		Frito-Lay Supply Chain reporting}
+		\resitem{Developed transportation/warehouse reports from Oracle Data warehouses}
+	\end{itemize}
+
+% \item
+% 	\ressubheading{Texas Instruments, Inc}{Dallas, TX}{Operations -
+% 	Microcontrollers Business Planner}{Jan 2012 - Dec 2012}
+% 	\begin{itemize}
+% 		\resitem{Managed cradle-to-grave manufacturing support and worldwide
+% 		shipment of device portfolio from planning to EOL stages}
+% 		\resitem{Harnessed Oracle Business Data Warehouses for Material Master,
+% 		shipping, revenue and inventory data mining}
+% 	\end{itemize}
+
+
+\item
+	\ressubheading{PepsiCo - Frito-Lay North America}{Plano, TX}{Internship -
+		Strategy and Business Innovation - Systems Integration}{Jan 2010 - Dec 2011}
+	\begin{itemize}
+		\resitem{Interfaced with Warehouse and Demand Planning systems to provide
+		decision support}
+		\resitem{Designed and Implemented reporting tools for Transportation and
+		Business Innovation teams}
+	\end{itemize}
+
+\end{itemize}
+\addline
+\\
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{M.S. Supply Chain Management}{GPA: 3.72}
+{University of Texas at Dallas}{Dec 2012}
+
+\item
+	\ressubheading{B.S. Operations Management, Minor in Computer Science}
+		{GPA: 3.94}{University of Texas at Dallas: Summa Cum Laude, Dean's
+			List}{Dec 2011}
+
+\item
+	\ressubheading{Donnguk University-Seoul, South Korea}{March-Jun 2010}{MIS
+		Exchange Program}{GPA: 3.95}
+\end{itemize}
+
+\pagebreak
+%-----------------------------------------------------------
+%Projects
+\addline
+\\
+\resheading{Projects}
+\begin{description}
+	\item [amalgam:] A news aggregator that's blazing-fast, has no JS, and serves out of decades-old hardware. \href{http://links.maxalcala.com}{link}
+	
+	\item [jibun (WIP):] An efficient, linear-time \href{https://en.wikipedia.org/wiki/Hitori}{Hitori} puzzle generator, with a React frontend. It improves upon the state-of-the-art with a novel graph algorithm to generate covered squares, and Knuth's DLX exact-cover algorithm to generate numbers.
+
+  \item [mock-knex:] Library to mock the popular knex DB client for node. Became a contributor when the
+    package had fallen behind and was not working. Collaborate with @jbrumwell on keeping up with newer knex versions.
+
+  \item [peakbucket.com:] Hiking and summit logging site, developed on Ruby/Rails + d3.js for data visualization.
+
+  \item [d3 handwriting:] Attempt to recreate variable, handwriting SVG glyphs using d3.js (github)
+\end{description}
+%\newpage
+
+\end{document}

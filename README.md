@@ -1,20 +1,27 @@
 [![Build Status](https://travis-ci.org/sc932/resume.svg?branch=master)](https://travis-ci.org/sc932/resume)
 
-This is my resume (and CV) in LaTeX
+This is my resume in LaTeX. While I originally found this resume independently and maintained it, the templates come from Scott Clark.
 
-This resume is based off a template I found a few years ago, which was a modified template, see the (C) list at the top for a history.
-
-I have also included the original templates (along the path to my resume).
+I have also included Scott's (and the others) original templates.
 
 Feel free to fork and edit.
 
 In linux run
+
 ```bash
 $ pdflatex resumeName.tex
 ```
-This should result in the creation of ``resumeName.pdf``
+
+This should result in the creation of `resumeName.pdf`
 
 Ubuntu requirements:
+
 ```bash
 $ sudo apt-get install texlive texlive-latex-extra
+```
+
+If you wish to use Docker for your latex needs instead, use in conjunction with https://github.com/blang/latex-docker:
+
+```bash
+$PATH_TO_LATEX_DOCKER_REPO/latexdockercmd.sh pdflatex dev_resume.tex
 ```
