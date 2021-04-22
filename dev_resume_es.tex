@@ -1,0 +1,221 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2010 Max Alcala <maxarturo-at-gmail.com> http://www.maxarturoas.com
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.65in}
+\setlength{\textwidth}{7.0in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\textheight=9.0in
+\usepackage{shading}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
+\newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\addline}{\line(1,0){500}}
+\newcommand{\ressubheading}[4]{
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}
+	{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{
+		\Large
+		Max Arturo Alcal\'{a} S\'{a}inz}	& 	(+1)773-640-3531 \\
+		254 Swett Rd &  	 https://github.com/maxArturo \\
+      Woodside, CA 94062 USA				&	  	maxarturo@gmail.com (Twitter: \href{https://twitter.com/MaxArturoAS}{@maxArturoAS})  \\
+                              &     https://maxalcala.com \\
+	\vspace{2pt}
+\end{tabular*}
+
+% \addline
+% 
+% \begin{center}
+% \resheading{Summary}
+% 
+%   I'm a Software Engineer/Tech Lead with significant buisness and customer-facing experience in both Fortune 50 companies and startups. My current interests cover full-stack development, distributed systems, and the art of fostering a healthy company culture.
+% 
+% \end{center}
+% 
+\addline
+\vspace{2pt}
+
+%-----------------------------------------------------------
+%Skills
+\resheading{Destrezas y Habilidades}
+
+\begin{description}
+	\item[Lenguajes de programación, frameworks y almacenamiento de datos:]
+    TypeScript/ES7/ESNext, Node.js, Kotlin, Ruby/Rails, bases de datos RDBMS/NoSQL. Golang, GraphQL, message queues, scripts de Bash, \LaTeX, y Reactive Extensions (ej Rx.js). Experiencia con programación funcional (Haskell, Elm, módulos funcionales de Typescript).
+
+	\item [Devops/CI:]
+    Jenkins/Teamcity, operación via Docker y containerization, Kubernetes, Vagrant, AWS, GCP, instrumentación y análisis de logs, scripting de Bash y administración básica de servidores Linux. Experiencia previa con Terraform/Chef. Testing automatizado via Cypress/Puppeteer.
+
+  \item [Frontend:]
+    HTML5, preprocesadores CSS, Javascript/precompilers (Babel/TypeScript), visualización de datos en el browser (d3, crossfilter, SVGs), React.js, Redux, Angular 6/7/8.
+
+	\item[Administración, liderazgo y ambiente empresarial:]
+    Experiencia colaborando con todos los niveles de gerencia en cada paso de desarrollo de software (requerimentos, ensayos, pruebas de viabilidad). Excelente habilidad analítica y  de comunicación con distintas audiencias. Experiencia previa trabajando directamente, tanto con VPs de compañías Fortune 50 como usuarios de producto. Experiencia colaborando remoto, con equipos foráneos y directos en oficina.
+
+	\item[Lenguajes naturales:]
+		Español nativo, Inglés nativo, Japonés intermedio. 
+
+	\item[Certificationes:]
+		AWS Certified Solutions Architect - Associate
+
+\end{description}
+\addline
+
+%-----------------------------------------------------------
+%Experience
+\resheading{Experiencia}
+\begin{itemize}
+
+\item
+  \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{San Jose, CA}{PwC Labs, Gerente Senior}{Presente}
+	\begin{itemize}
+    	\resitem{Desarrollar soluciones de cero para apoyar la gestión de equipos con clientes}
+		\resitem{Promover nuevas técnicas y herramientas para optimizar la entrega de proyectos y minimzar costos}
+		\resitem{Proveer análisis y arquitectura de sistemas para optimizar la experiencia de los equipos en PwC}
+	\end{itemize}
+
+\item
+  \ressubheading{\href{https://clearcover.com}{Clearcover.com}}{Chicago, IL}{Ingeniero de Software Principal}{2019 - 2021}
+	\begin{itemize}
+    	\resitem{Encabezó equipo responsable de desarrollar el software de pólizas de seguros de la compañía}
+    	\resitem{Construyó sistema de templetes para generar formas de seguros PDF via tecnologías AWS/Puppeteer/Node }
+		\resitem{Entrenar, colaborar y gestionar al equipo de desarrolladores para maximizar su productividad y promover una cultura de software conducente a calidad}
+		\resitem{Lista de tecnologías utilizada: Functional Typescript(v3.x), Rails, Kotlin, AWS/K8s, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{Chicago, IL}{Grupo "New Ventures", Manager – Gerente Técnico}{2017 - 2019}
+	\begin{itemize}
+    \resitem{Proveyó liderazo técnico a lo largo de todo el ciclo de vida de software para multiples productos nuevos}
+		\resitem{Responsable de todos los aspectos de ejecución técnicos para llevar a cabo la visión de los productos: arquitectura, desarrollo directo, infraestructura de servidores, calidad del software y uso de técnicas óptimas, etc.}
+		\resitem{Gerenció desarrolladores "offshore" remotos para asegurar la calidad del software}
+		\resitem{Promovió colaboración de desarrolladores de software modernos (estimados de tiempo en base a los desarrolladores, etc) en PwC}
+		\resitem{Lista de tecnologías utilizada: ES6/Typescript, Angular 5, Node.js, GCP Suite, Docker, Kubernetes, Firebase, Jenkins, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{ReviewTrackers}{Chicago, IL}{Ingeniero de Software Senior}{2017}
+	\begin{itemize}
+    \resitem{Desarrolló nuevas features tanto en el browser como en el servidor para el crecimiento de la base de usuarios}
+    \resitem{Automatizó tareas repetitivas para aumentar la productividad del equipo de desarrolladores }
+    \resitem{Colaboró y entrenó a desarrolladores menos capacitados}
+    \resitem{Realizó análisis de eficiencia del software e implementó optimizaciones correspondientes}
+        \resitem{Lista de tecnologías utilizada: React, Golang. Ruby, Solr, Heroku/AWS, React, Node.js, Postgres}
+	\end{itemize}
+
+\item
+  \ressubheading{Shoppertrak}{Chicago, IL}{Ingeniero de Software Senior/Gerente del equipo de software}{2015 - 2016}
+	\begin{itemize}
+    \resitem{Responsable de desarrollar y administrar el API Node de la aplicación de reportes de la compañía}
+    \resitem{Manejó las tareas de su equipo y gestionó las prioridades con equipos de Producto }
+    \resitem{Promovió prácticas óptimas para el desarrollo de software en su equipo y entrenó a los desarrolladores más novatos}
+    \resitem{Configuró herramientas CI y servidores para la infraestructura requerida del software}
+     \resitem{Lista de tecnologías utilizada: Angular, Node.js, AWS, Redshift/PG, TeamCity}
+	\end{itemize}
+
+% \newpage
+
+\item
+	\ressubheading{Tukaiz, LLC}{Chicago, IL}{Ingeniero de Software}{Mayo - Oct 2015}
+	\begin{itemize}
+		\resitem{Dió soporte a aplicaciones de Rails 2.3.8, 3, \& 4 }
+		\resitem{Re-escribió código principal de Visual Basic a Ruby}
+		\resitem{Re-implementó manejador de datos usando Rails/Sidekiq}
+	\end{itemize}
+
+\item 
+	\ressubheading{Gearbox Software}{Dallas, TX}{Contratista - Desarrollador de Software}{May - Dec 2015}
+	\begin{itemize}
+		\resitem{Implementó Sitio de Beta y registro para videojuego "Battleborn" usando Ruby/Rails}
+		\resitem{Colaboró en experiencia del usuario y diseño interno del API}
+	\end{itemize}
+
+
+
+\item
+	\ressubheading{PepsiCo - Frito-Lay North America}{Plano, TX}{Desarrollador para Cadena de Suministros y Transportación}{2013 - 2015}
+	\begin{itemize}
+		\resitem{Generó reportes nacionales para la cadena de suministros de Pepsico (Días de inventario, exactitud de demanda), para Frito-Lay US y Canadá}
+		\resitem{Proporcionó mantenimento de scripts para transferencia de datos para toda la cadena de suministros de Frito Lay}
+		\resitem{Desarrolló reportes para las bases de dato Oracle de la compañía}
+	\end{itemize}
+
+% \item
+% 	\ressubheading{Texas Instruments, Inc}{Dallas, TX}{Operations -
+% 	Microcontrollers Business Planner}{Jan 2012 - Dec 2012}
+% 	\begin{itemize}
+% 		\resitem{Managed cradle-to-grave manufacturing support and worldwide
+% 		shipment of device portfolio from planning to EOL stages}
+% 		\resitem{Harnessed Oracle Business Data Warehouses for Material Master,
+% 		shipping, revenue and inventory data mining}
+% 	\end{itemize}
+
+
+\end{itemize}
+\addline
+\\
+\resheading{Educación}
+\begin{itemize}
+\item
+	\ressubheading{Maestría, Supply Chain Management}{GPA: 3.72}
+{University of Texas at Dallas}{Dec 2012}
+
+\item
+	\ressubheading{Licenciatura: Operations Management, dip. de Ciencias de la Computación}
+		{GPA: 3.94}{University of Texas at Dallas: Summa Cum Laude}{Dec 2011}
+\end{itemize}
+
+\pagebreak
+%-----------------------------------------------------------
+%Projects
+\addline
+\\
+\resheading{Proyectos personales}
+\begin{description}
+	\item [amalgam:] Agregador de noticias extremadamente rápido, sin JS, funcional en hardware de baja capacidad. \href{http://links.maxalcala.com}{link}
+	
+	\item [jibun (WIP):] Un generador de tablero \href{https://en.wikipedia.org/wiki/Hitori}{Hitori} eficiente en tiempo lineal. Es una mejora en los mejores algoritmos existentes, utilizando un algoritmo de grafo acíclico dirigido para generar cuardos cubiertos, y el algoritmo de cobertura exacta "DLX" de Knuth para generar números, usando React.
+
+  \item [d3 handwriting:] Prueba para recrear letras que asemejan escribir a mano, usando glifos de SVG on d3.js. (en github)
+\end{description}
+%\newpage
+
+\end{document}

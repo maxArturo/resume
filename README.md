@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/sc932/resume.svg?branch=master)](https://travis-ci.org/sc932/resume)
-
 This is my resume in LaTeX. While I originally found this resume independently and maintained it, the templates come from Scott Clark.
 
 I have also included Scott's (and the others) original templates.
