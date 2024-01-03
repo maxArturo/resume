@@ -1,4 +1,5 @@
-This is my resume in LaTeX. While I originally found this resume independently and maintained it, the templates come from Scott Clark.
+This is my resume in LaTeX. While I originally found this resume
+independently and maintained it, the templates come from Scott Clark.
 
 I have also included Scott's (and the others) original templates.
 
@@ -6,7 +7,7 @@ Feel free to fork and edit.
 
 In linux run
 
-```bash
+``` bash
 $ pdflatex resumeName.tex
 ```
 
@@ -14,12 +15,13 @@ This should result in the creation of `resumeName.pdf`
 
 Ubuntu requirements:
 
-```bash
+``` bash
 $ sudo apt-get install texlive texlive-latex-extra
 ```
 
-If you wish to use Docker for your latex needs instead, use in conjunction with https://github.com/blang/latex-docker:
+If you wish to use Docker for your latex needs instead, use in
+conjunction with <https://github.com/blang/latex-docker>:
 
-```bash
+``` bash
 $PATH_TO_LATEX_DOCKER_REPO/latexdockercmd.sh pdflatex dev_resume.tex
 ```
