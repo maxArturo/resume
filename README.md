@@ -24,4 +24,7 @@ conjunction with <https://github.com/blang/latex-docker>:
 
 ``` bash
 $PATH_TO_LATEX_DOCKER_REPO/latexdockercmd.sh pdflatex dev_resume.tex
+
+# or if you are using a custom typeface, use `xelatex`
+$PATH_TO_LATEX_DOCKER_REPO/latexdockercmd.sh xelatex dev_resume.tex
 ```

@@ -27,6 +27,8 @@
 %-----------------------------------------------------------
 %\usepackage{fullpage}
 %\textheight=9.0in
+\usepackage{fontspec}
+\setmainfont{BerkeleyMonoNF-Regular}
 \usepackage{shading}
 \usepackage{hyperref}
 \pagestyle{empty}
@@ -38,75 +40,88 @@
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-3pt}}
 \newcommand{\resheading}[1]{{\large {\textbf{#1 \vphantom{p\^{E}}}}}}
-\newcommand{\addline}{\line(1,0){500}}
+\newcommand{\thinline}{\line(1,0){450}}
+\newcommand{\addline}{\noindent\rule{\textwidth}{2pt}}
 \newcommand{\ressubheading}[4]{
 	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-			\textbf{#1} & #2 \\
-			\textit{#3} & \textit{#4} \\
+    \textbf{#1} & \MakeUppercase{#2} \\
+			\textit{#3} & #4 \\
 	\end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
 
 
 \begin{document}
 
+
+% \vspace{1pt}
+% VER-1717707387000
+
+
 \begin{tabular*}
 	{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{
-		\Large
-		Max Arturo Alcal\'{a} S\'{a}inz}	& 	(+1) 469-893-0681 \\
-		140 48th St SE &  	 https://github.com/maxArturo \\
-      Paris, TX 75462 USA				&	  	maxarturo@gmail.com  \\
-                              &     https://maxalcala.com \\
-	\vspace{2pt}
+
+  \textbf{\Large{MAX ARTURO ALCAL\'{A} S\'{A}INZ}} & |>1717707387000
+
+\end{tabular*}
+
+\noindent\rule{\textwidth}{2pt}
+\vspace{2pt}
+\begin{tabular*}
+	{7in}{l@{\extracolsep{\fill}}r}
+	
+    \MakeUppercase{140 48th St SE} &  	 https://github.com/maxArturo \\
+     \MakeUppercase{Paris, TX 75462 USA}				&	  	maxarturo@gmail.com  \\
+  TEL: (+1) 469-893-0681                          &     https://maxalcala.com \\
 \end{tabular*}
 
  \addline
  
  \begin{center}
- \resheading{Summary}
+ \resheading{SUMMARY}
  
    Software engineer with buisness and customer-facing experience in both Fortune 50 companies and startups. My experience has ranged from individual contributor (including a Principal role), to managing large teams onshore and offshore.  My current interests cover language parsers/compilers, literate programming, and the art of fostering a healthy company culture.
  
  \end{center}
  
 \addline
-\vspace{2pt}
 
 %-----------------------------------------------------------
 %Skills
 
-\resheading{Skills}
+\resheading{SKILLS}
 
 \vspace{2pt}
-\textit{Note.} The following list of technologies and languages is not exhaustive nor comprehensive for practicality; please reach out if a particular language or framework matters to you.
+\textit{NOTE}: The following list of technologies and languages is not exhaustive nor comprehensive for practicality; please reach out if a particular language or framework matters to you.
 \begin{description}
-	\item[Programming Languages:]
+	\item[PROGRAMMING LANGUAGES:]
     TS/ES7/ESNext/JS, Kotlin, Ruby, Golang, Common Lisp, Rust, Dart, VBA/VBS, sh/bash/zsh, \LaTeX, most markup and hypertext languages. 
 
-	\item[Frameworks and storage:]
+	\item[FRAMEWORKS AND STORAGE:]
     GraphQL, message queues, Rails, NextJS/most JS frameworks, Reactive Extensions (particularly Rx.js). Varied functional programming experience (Haskell, Elm, functional TS libraries). RDBMS/NoSQL/K-V persisted storage, as well general caching components and libraries.
 
-	\item [Devops/CI:]
+	\item [DEVOPS/CI:]
     Jenkins/Teamcity/GH actions, deployments via Docker and containerization, Kubernetes/istio. AWS/GCP/Azure management, cost tuning and other general tasks (IAM, TF/deployment troubleshooting), etc. Instrumentation and measurement, bash scripting and basic Linux server management. Previous Terraform/Chef exposure. Automated testing/e2e via Playwright/Cypress/Puppeteer.
 
-  \item [Frontend and mobile:]
+  \item [FRONTEND/MOBILE:]
     HTML5, CSS preprocessors, Javascript/precompilers (Babel/TypeScript). Mobile primarily via Flutter. Client-side data visualization and processing (d3, crossfilter, SVGs), React.js, Redux, Angular 6/7/8. No-JS frameworks (HTMX, tachyons.css)
 
-	\item[Management/PE/Tech Lead:]
+	\item[MANAGEMENT/PE/TECH LEAD:]
     Work at any level of abstraction within management (process requirements, deliverables, proof-of-concept). Excellent analytical, communication and problem-solving skills. Seasoned interviewer and hiring manager. Previous experience working directly with Fortune 50 VPs as well as directly with end-users. Experienced leading offshore, as well as onshore teams.
 
-	\item[Natural Languages:]
+	\item[NATURAL LANGUAGES:]
 		Native Spanish, Intermediate Japanese.
 
-	\item[Certifications:]
+	\item[CERTIFICATIONS:]
 		AWS Certified Solutions Architect - Associate
 
 \end{description}
+
+\pagebreak
 \addline
 
 %-----------------------------------------------------------
 %Experience
-\resheading{Experience}
+\resheading{EXPERIENCE}
 \begin{itemize}
 
 \item
@@ -118,6 +133,7 @@
 		\resitem{Support and mentor offshore developers. Encouraged best practices, industry-standard patterns, and performed architectural analysis}
 		\resitem{Stack: ES6/Typescript, Angular 5, Node.js, GCP Suite, Docker, Kubernetes, Firebase, Jenkins, Postgres}
 	\end{itemize}
+  \thinline
 
 \item
   \ressubheading{\href{https://clearcover.com}{Clearcover.com}}{Chicago, IL}{Lead Software Engineer}{2019 - 2021}
@@ -127,6 +143,7 @@
 		\resitem{Pair, upskill, and unblock team members to maximize their productivity and promote a healthy dev team culture}
 		\resitem{Stack: Functional Typescript(v3.x), Rails, Kotlin, AWS/K8s, Postgres}
 	\end{itemize}
+  \thinline
 
 \item
   \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{Chicago, IL}{New Ventures Practice – Tech Lead}{2017 - 2019}
@@ -137,6 +154,8 @@
 		\resitem{Promote successful development team behaviors (developer-led estimations, people over process) in the firm}
 		\resitem{Stack: ES6/Typescript, Angular 5, Node.js, GCP Suite, Docker, Kubernetes, Firebase, Jenkins, Postgres}
 	\end{itemize}
+  \thinline
+    
 
 \item
   \ressubheading{ReviewTrackers}{Chicago, IL}{Senior Software Developer}{2017}
@@ -148,6 +167,7 @@
         \resitem{Stack: React, Golang. Ruby, Solr, Heroku/AWS, React, Node.js, Postgres}
 	\end{itemize}
 
+% \pagebreak
 \item
   \ressubheading{Shoppertrak}{Chicago, IL}{Senior Software Developer/Team Lead}{2015 - 2016}
 	\begin{itemize}
@@ -157,6 +177,8 @@
     \resitem{Configure CI tools, provision, deploy and document server infrastructure requirements}
      \resitem{Stack: Angular, Node.js, AWS, Redshift/PG, TeamCity}
 	\end{itemize}
+  \thinline
+    
 
 % \newpage
 
@@ -167,6 +189,8 @@
 		\resitem{Refactored large legacy VB codebase into Ruby}
 		\resitem{Re-implemented file management scheduler with Rails/Sidekiq}
 	\end{itemize}
+  \thinline
+    
 
 \item 
 	\ressubheading{Gearbox Software}{Dallas, TX}{Software Developer - Contractor}{May - Dec 2015}
@@ -178,7 +202,7 @@
 \end{itemize}
 \addline
 \\
-\resheading{Education}
+\resheading{EDUCATION}
 \begin{itemize}
 \item
 	\ressubheading{M.S. Supply Chain Management}{GPA: 3.72}
@@ -194,12 +218,14 @@
 		Exchange Program}{GPA: 3.95}
 \end{itemize}
 
+
+
 % \pagebreak
 %-----------------------------------------------------------
 %Projects
 \addline
 \\
-\resheading{Projects and OSS}
+\resheading{PROJECTS AND OSS}
 \begin{description}
   \item [Vamonos MGP:] A flutter ios/Android app to assist the general public in the Puerreydon municipality of Argentina with public transportation arrival times. \href{https://apps.apple.com/us/app/vamonos-mgp/id6447891853}{App Store link}
 
@@ -212,6 +238,6 @@
 	\item [jibun (WIP):] An efficient, linear-time \href{https://en.wikipedia.org/wiki/Hitori}{Hitori} puzzle generator, with a React frontend. It improves upon the state-of-the-art with a novel graph algorithm to generate covered squares, and Knuth's DLX exact-cover algorithm to generate numbers.
 
 \end{description}
-%\newpage
 
+%\newpage
 \end{document}
