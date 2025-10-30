@@ -2,7 +2,7 @@
 %
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2010 Max Alcala <maxarturo-at-gmail.com> http://www.maxarturoas.com
+% (c) 2010 Max Alcala <maxarturo-at-gmail.com> https://maxalcala.com
 %
 %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
 
@@ -60,7 +60,7 @@
 \begin{tabular*}
 	{7in}{l@{\extracolsep{\fill}}r}
 
-  \textbf{\Large{MAX ARTURO ALCAL\'{A} S\'{A}INZ}} & |>1717707387000
+  \textbf{\Large{MAX ARTURO ALCAL\'{A} S\'{A}INZ}} & |> 727931187386
 
 \end{tabular*}
 
@@ -79,7 +79,7 @@
  \begin{center}
  \resheading{SUMMARY}
  
-   Software engineer with buisness and customer-facing experience in both Fortune 50 companies and startups. My experience has ranged from individual contributor (including a Principal role), to managing large teams onshore and offshore.  My current interests cover language parsers/compilers, literate programming, and the art of fostering a healthy company culture.
+   Software engineer with business and customer-facing experience in both Fortune 50 companies and startups. My experience has ranged from individual contributor (including a Principal role), to managing large teams onshore and offshore.  My current interests cover language parsers/compilers, literate programming, and the art of fostering a healthy company culture.
  
  \end{center}
  
@@ -97,19 +97,19 @@
     TS/ES7/ESNext/JS, Kotlin, Ruby, Golang, Common Lisp, Rust, Dart, VBA/VBS, sh/bash/zsh, \LaTeX, most markup and hypertext languages. 
 
 	\item[FRAMEWORKS AND STORAGE:]
-    GraphQL, message queues, Rails, NextJS/most JS frameworks, Reactive Extensions (particularly Rx.js). Varied functional programming experience (Haskell, Elm, functional TS libraries). RDBMS/NoSQL/K-V persisted storage, as well general caching components and libraries.
+    GraphQL, message queues, Rails, NextJS/most JS frameworks, Reactive Extensions (particularly Rx.js). Varied functional programming experience (Haskell, Elm, functional TS libraries). RDBMS/NoSQL/K-V/Columnar persisted storage, as well general caching components and libraries.
 
 	\item [DEVOPS/CI:]
     Jenkins/Teamcity/GH actions, deployments via Docker and containerization, Kubernetes/istio. AWS/GCP/Azure management, cost tuning and other general tasks (IAM, TF/deployment troubleshooting), etc. Instrumentation and measurement, bash scripting and basic Linux server management. Previous Terraform/Chef exposure. Automated testing/e2e via Playwright/Cypress/Puppeteer.
 
   \item [FRONTEND/MOBILE:]
-    HTML5, CSS preprocessors, Javascript/precompilers (Babel/TypeScript). Mobile primarily via Flutter. Client-side data visualization and processing (d3, crossfilter, SVGs), React.js, Redux, Angular 6/7/8. No-JS frameworks (HTMX, tachyons.css)
+    HTML5, CSS preprocessors, Javascript/precompilers (Babel/TypeScript). Mobile primarily via Flutter. Client-side data visualization and processing (d3, crossfilter, SVGs), Remix framework, React.js, Redux, Angular 6/7/8. No-JS frameworks (HTMX, tachyons.css)
 
 	\item[MANAGEMENT/PE/TECH LEAD:]
     Work at any level of abstraction within management (process requirements, deliverables, proof-of-concept). Excellent analytical, communication and problem-solving skills. Seasoned interviewer and hiring manager. Previous experience working directly with Fortune 50 VPs as well as directly with end-users. Experienced leading offshore, as well as onshore teams.
 
 	\item[NATURAL LANGUAGES:]
-		Native Spanish, Intermediate Japanese.
+    Native English, Native Spanish, Intermediate Japanese {\fontspec{IPAMincho}（日本語能力試験N3)}
 
 	\item[CERTIFICATIONS:]
 		AWS Certified Solutions Architect - Associate
@@ -125,7 +125,18 @@
 \begin{itemize}
 
 \item
-  \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{Chicago, IL}{PwC Labs – Principal Engineer}{2021-2023}
+  \ressubheading{Common Sense Privacy (Subsidiary of Common Sense Media\texttrademark)}{Remote}{Lead Contractor}{2023 - Present}
+	\begin{itemize}
+    \resitem{Lead developer for company's codebases}
+    \resitem{Took over from previous contractor team at a critical junction and refactored code for maintainability}
+    \resitem{Implemented CI/CD best practices, ensured test reliability, upgraded dependencies and enabled streamlined long-term support}
+    \resitem{Current approach allows feature growth in balance with reliability at a fraction of the budget}
+		\resitem{Stack: Vite/Typescript, Remix framework, Node.js, AWS, Docker, CircleCI, MySQL}
+	\end{itemize}
+  \thinline
+
+\item
+  \ressubheading{PriceWaterhouseCoopers, LLC (PwC)}{Chicago, IL}{PwC Labs – Principal Engineer}{2021 - 2023}
 	\begin{itemize}
     \resitem{Led design and implementation of blockchain auditing solutions for PwC Labs}
     \resitem{Provided technical leadership, executed on mission-critical components and prioritized projects with senior leadership}
@@ -220,20 +231,20 @@
 
 
 
-% \pagebreak
+\pagebreak
 %-----------------------------------------------------------
 %Projects
 \addline
 \\
 \resheading{PROJECTS AND OSS}
 \begin{description}
-  \item [Vamonos MGP:] A flutter ios/Android app to assist the general public in the Puerreydon municipality of Argentina with public transportation arrival times. \href{https://apps.apple.com/us/app/vamonos-mgp/id6447891853}{App Store link}
+  \item [Vamonos MGP:] A flutter ios/Android app to assist the general public in the Pueyrredón municipality of Argentina with public transportation arrival times. 
 
-	\item [maxarturo.github.io:] A Common Lisp static site generator that allows for arbitrary s-expression execution within the context of Markdown files. \href{https://github.com/maxArturo/maxarturo.github.io}{hosted under maxalcala.com}
+	\item [maxarturo.github.io:] A barebones static site generator that aims for dependency reduction and speed of generation, while presenting a literate hypertext in the style of Edward Tufte. \href{https://github.com/maxArturo/maxarturo.github.io}{hosted under maxalcala.com}
 	
   \item [cl-peg-yapp:] Product Expression Grammar (PEG) parser, code generator and meta-parser built from first principles in SBCL. Parses its own grammar and allows for PEG bottom-up testing and literate coding. \href{https://github.com/maxArturo/cl-peg-yapp}{link}
 
-  \item [zod:] Contributed Collaborated on the GH project. A versatile TS run-time type validator. \href{https://github.com/colinhacks/zod}{gh link} and \href{https://github.com/colinhacks/zod/commits?author=maxArturo}{commits}
+  \item [zod:] Collaborated on the GH project. A versatile TS run-time type validator. \href{https://github.com/colinhacks/zod}{gh link} and \href{https://github.com/colinhacks/zod/commits?author=maxArturo}{commits}
 
 	\item [jibun (WIP):] An efficient, linear-time \href{https://en.wikipedia.org/wiki/Hitori}{Hitori} puzzle generator, with a React frontend. It improves upon the state-of-the-art with a novel graph algorithm to generate covered squares, and Knuth's DLX exact-cover algorithm to generate numbers.
 
